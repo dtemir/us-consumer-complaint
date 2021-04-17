@@ -1,5 +1,8 @@
 # Dataset
 complaints.csv
+clean_complaints.csv
+clean_complaints.pkl
+.~lock.complaints.csv#
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
