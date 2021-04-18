@@ -1,8 +1,29 @@
-# Consumer Finance Complaints | Ranking and Analysis
+# Bank Score. 
+## It's Like Creidt Score, but for banks.
 
 <div align="center">
     <img src="images/logo.png" width="250" height="200">
 </div>
+
+## Results
+
+By doing this hack, we ranked financial institutions based on the number of complaints they have at the [Consumer Financial Protectioin Bureau](https://www.consumerfinance.gov/). We also built an interactive map to show where those complaints have been made.
+
+This hack is useful for consumers to know which banks and financial institutions they can go to when applying for a credit card, loan, or mortgage. 
+
+The top 10 worst companies, according to the number of complaints:
+
+![Top 10 Worst Companies](content/worst_companies_complaints.png)
+
+In our rating, the top 10 worst companies that didn't handle they responses to consumers well are:
+
+![Top 10 Worst Ratings](content/worst_companies.png)
+
+The map where most of those complaints have been made, based on ZIP codes (click on it to go to interactive map):
+
+[![Map](content/map.png)](https://dtemir.github.io/uiowa)
+
+
 
 ## Dataset
 
