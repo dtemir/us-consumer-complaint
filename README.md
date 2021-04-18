@@ -4,7 +4,7 @@
     <img src="images/logo.png" width="250" height="200">
 </div>
 
-# Dataset
+## Dataset
 
 In the original dataset, we have around 2 million entries. Each entry represents a single complaint.
 
@@ -39,9 +39,13 @@ In the original dataset, we have around 2 million entries. Each entry represents
     
 </details>
 
-# Clean Dataset
+## Clean Dataset
 
 You can find the clean dataset we made here, <a href="https://drive.google.com/file/d/1mYJws7uPjbPqPszUQHpf4PfrHSEjAVIu/view?usp=sharing" target="__blank">.pkl</a> and <a href="https://drive.google.com/file/d/1fayiycfrGHsO3aqEGo7J5lDLWiPvfNZ7/view?usp=sharing" target="__blank">.csv</a>. The clean dataset:
 * has all the necessary columns in a proper data type, such as dates and strings.
 * only represents entries with a proper ZIP code (full, 5-digit zipcodes).
 * and has no NaNs for the ZIP codes (for visualization).
+
+## Mapping
+
+To use the map notebook, please first download the <a href="https://drive.google.com/file/d/1g-9q7Dcbii6V0Iyk7p_L-8iJeEpGwyaM/view?usp=sharing" target="__blank">complaints.json</a> file
