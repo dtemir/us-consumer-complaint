@@ -1,5 +1,5 @@
 # Bank Score. 
-## It's Like Creidt Score, but for banks.
+## It's Like Credit Score, but for banks.
 
 <div align="center">
     <img src="images/logo.png" width="250" height="200">
