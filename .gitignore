@@ -3,6 +3,8 @@ complaints.csv
 clean_complaints.csv
 clean_complaints.pkl
 .~lock.complaints.csv#
+complaints.json
+complaints_polygon.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
