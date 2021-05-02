@@ -1,33 +1,55 @@
+<div align="center">
+    <a href="https://hack.uiowa.edu/" target="__blank"><img src="images/logo.png" width="250" height="200"></a>
+</div>
+
 # Bank Score. 
 ## It's Like Creidt Score, but for banks.
 
-<div align="center">
-    <img src="images/logo.png" width="250" height="200">
-</div>
+Ranking banks according to the number and type of complaints they receive. Presenting data through plots, graphs, and maps.
+
+## Inspiration
+
+We wanted to know if we can use the US consumer base and their complaints against financial institutions to rank banks. We also wanted to see the trends associated with financial consumer complaints through data visualization.
+
+## What it does
+
+Our project is currently a **collection of Jupyter Notebooks** where we first **wrangle data** into useful material, then **extract some insights**, and finish it off with **more data wrangling** to extract geo-data and **build an interactive map**.
 
 ## Results
 
-By doing this hack, we ranked financial institutions based on the number of complaints they have at the [Consumer Financial Protectioin Bureau](https://www.consumerfinance.gov/). We also built an interactive map to show where those complaints have been made.
+### Highest Number of Complaints
 
-This hack is useful for consumers to know which banks and financial institutions they can go to when applying for a credit card, loan, or mortgage. 
+We found that the companies with the most number of complaints are **Equifax**, **TRANSUNION INTERMEDIATE HOLDINGS**, and **Experian Information Solutions**, who each have around **130,000 complaints**. The worst three are then followed by the **Bank of America**, **Wells Fargo**, and **JPMorgan Chase**, having around **50,000 complaints** each.
 
-The top 10 worst companies, according to the number of complaints:
+### Highly Rated Companies
 
-![Top 10 Worst Companies](content/worst_companies_complaints.png)
+We also rated the companies in our data according to the way they respond to complaints, such as if they respond with monetary relief and provide timely response. The most highly rated institutions were **IQOR US**, **Capio Partners**, and **The CMI Group**, who all have almost a perfect score of 100%.
 
-In our rating, the top 10 worst companies that didn't handle they responses to consumers well are:
+### Poorly Rated Companies
 
-![Top 10 Worst Ratings](content/worst_companies.png)
+The companies with the lowest ratings are **Wells Fargo** with 52% rating, **Equifax** with 4% rating, and **TRANSUNION INTERMEDIATE HOLDINGS** with 0% rating. We can the connection between the number of complaints these companies receive and their poor rating.
 
-The map where most of those complaints have been made, based on ZIP codes (click on it to go to interactive map):
+### Clustering Complaints by Zip Codes
+
+We also produced an **interactive map** using the available Zip Code numbers. We were able to **group complaints according to their Zip Code coordinates** and then **put them on the map** using useful libraries, *uszipcode* and *folium*.
 
 [![Map](content/map.png)](https://dtemir.github.io/uiowa)
 
-
-
 ## Dataset
 
-In the original dataset, we have around 2 million entries. Each entry represents a single complaint.
+The dataset is provided by the **<a href="https://www.consumerfinance.gov/data-research/consumer-complaints/" target="__blank">Consumer Financial Protection Bureau</a>**. The dataset initially includes around **2,050,540 entries across 18 columns**, each entry representing a consumer complaint. After cleaning and dropping values that are unprocessable due to consumers choosing not to disclose some information, there are **1,057,135 entries**.
+
+First four entries:
+
+|Complaint ID |Date received|Product                                          |Sub-product                               |Issue                               |Sub-issue                          |Consumer complaint narrative|Company public response                          |Company                            |State|ZIP code|Tags|Consumer consent provided?|Submitted via|Date sent to company|Company response to consumer   |Timely response?|Consumer disputed?|
+|------------|-------------|-------------------------------------------------|------------------------------------------|------------------------------------|-----------------------------------|----------------------------|-------------------------------------------------|-----------------------------------|-----|--------|----|--------------------------|-------------|--------------------|-------------------------------|----------------|------------------|
+|         |             |                                                 |                                          |                                    |                                   |                            |                                                 |                                   |     |        |    |                          |             |                    |                               |                |                  |
+|3379500     |2019-09-19   |Credit reporting, credit repair services, or o...|Credit reporting                          |Incorrect information on your report|Information belongs to someone else|NaN                         |Company has responded to the consumer and the ...|Experian Information Solutions Inc.|PA   |15206   |NaN |Consent not provided      |Web          |2019-09-20          |Closed with non-monetary relief|Yes             |NaN               |
+|3255455     |2019-05-23   |Checking or savings account                      |Checking account                          |Managing an account                 |Deposits and withdrawals           |NaN                         |Company has responded to the consumer and the ...|MIDFIRST BANK                      |AZ   |85254   |NaN |NaN                       |Referral     |2019-05-28          |Closed with explanation        |Yes             |NaN               |
+|4267123     |2021-04-02   |Credit reporting, credit repair services, or o...|Credit reporting                          |Incorrect information on your report|Information belongs to someone else|NaN                         |NaN                                              |EQUIFAX, INC.                      |PA   |19403   |NaN |NaN                       |Web          |2021-04-02          |Closed with explanation        |Yes             |NaN               |
+|3446074     |2019-11-20   |Credit card or prepaid card                      |General-purpose credit card or charge card|Closing your account                |Company closed your account        |NaN                         |Company has responded to the consumer and the ...|PENTAGON FEDERAL CREDIT UNION      |VA   |22304   |NaN |NaN                       |Referral     |2019-11-21          |Closed with explanation        |Yes             |NaN               |
+
+Columns and their descriptions:
 
 |**Field name**| Description|
 |---|---|
@@ -50,7 +72,7 @@ In the original dataset, we have around 2 million entries. Each entry represents
 |**Consumer disputed?**|Whether the consumer disputed the company’s response.|
 |**Complaint ID**|The unique identification number for a complaint.|
 
-<details>
+<details> <summary> Term Clarifications</summary>
 
 *Consumers must opt-in to share their narrative. We will not publish the narrative unless the consumer consents, and consumers can opt-out at any time. The CFPB takes reasonable steps to scrub personal information from each complaint that could be used to identify the consumer.    
     
