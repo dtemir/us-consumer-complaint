@@ -3,7 +3,7 @@
 </div>
 
 # Bank Score. 
-## It's Like Creidt Score, but for banks.
+## It's Like Credit Score, but for banks.
 
 Ranking banks according to the number and type of complaints they receive. Presenting data through plots, graphs, and maps.
 
