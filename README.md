@@ -3,7 +3,7 @@
 </div>
 
 # Bank Score. 
-## It's Like Credit Score, but for banks.
+## It's Like Creidt Score, but for banks.
 
 Ranking banks according to the number and type of complaints they receive. Presenting data through plots, graphs, and maps.
 
@@ -27,7 +27,7 @@ We also rated the companies in our data according to the way they respond to com
 
 ### Poorly Rated Companies
 
-The companies with the lowest ratings are **Wells Fargo** with 52% rating, **Equifax** with 4% rating, and **TRANSUNION INTERMEDIATE HOLDINGS** with 0% rating. We can the connection between the number of complaints these companies receive and their poor rating.
+The companies with the lowest ratings are **Wells Fargo** with 52% rating, **Equifax** with 4% rating, and **TRANSUNION INTERMEDIATE HOLDINGS** with 0% rating. We can see the connection between the number of complaints these companies receive and their poor rating.
 
 ### Clustering Complaints by Zip Codes
 
@@ -82,7 +82,7 @@ Columns and their descriptions:
     
 </details>
 
-## Clean Dataset
+### Clean Dataset
 
 You can find the clean dataset we made here, <a href="https://drive.google.com/file/d/1mYJws7uPjbPqPszUQHpf4PfrHSEjAVIu/view?usp=sharing" target="__blank">.pkl</a> and <a href="https://drive.google.com/file/d/1fayiycfrGHsO3aqEGo7J5lDLWiPvfNZ7/view?usp=sharing" target="__blank">.csv</a>. The clean dataset:
 * has all the necessary columns in a proper data type, such as dates and strings.
