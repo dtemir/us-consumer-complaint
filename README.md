@@ -33,7 +33,7 @@ The companies with the lowest ratings are **Wells Fargo** with 52% rating, **Equ
 
 We also produced an **interactive map** using the available Zip Code numbers. We were able to **group complaints according to their Zip Code coordinates** and then **put them on the map** using useful libraries, *uszipcode* and *folium*.
 
-[![Map](content/map.png)](https://dtemir.github.io/uiowa)
+[![Map](content/map.png)](https://temir.dev/projects/uiowa-hack/uiowa)
 
 ## Dataset
 
